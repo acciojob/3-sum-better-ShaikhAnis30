@@ -18,7 +18,7 @@ function threeSum(arr, target) {
 
         if(sum > tgt) k--;
         else if (sum < tgt) j++;
-        else return sum;
+        else return tgt;
       }
       while (i < arr.length-2 && arr[i] === arr[i+1]) {
         i++;
