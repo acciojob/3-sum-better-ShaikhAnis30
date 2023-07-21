@@ -5,10 +5,8 @@ function threeSum(arr, target) {
   let res = 0;
   for (let i = 0; i < arr.length-2; i++) {
       let j = i+1, k = arr.length-1;
-      let tgt = target - arr[i];
-      
+	  
       while (j < k) {
-        let sum = arr[j] + arr[k];
         let threeSum = arr[i] + arr[j] + arr[k];
 
         if(Math.abs(threeSum-target) < minDiff) {
